@@ -1,0 +1,65 @@
+body {
+    background-color: greenyellow;
+}
+
+.input {
+width: 23rem;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: row;
+    width: 24rem;
+}
+
+.numbers {
+    width: 14rem;
+    margin: 2px;
+}
+
+.number {
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    color: red;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+    margin: 2px;
+}
+
+.operators {
+    width: 10rem;
+    margin: 2px;
+}
+
+.operator {
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    color: red;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+    margin: 2px;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    background-color: red;
+}
+
+#results {
+    width: 22rem;
+    height: 4rem;
+    font-size: 22px;
+    color: red;
+    outline:0px;
+    margin: 2px;
+    padding: 10px 10px;
+}
+
