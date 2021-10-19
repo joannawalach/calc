@@ -1,8 +1,12 @@
-let addNumber = document.querySelectorAll("button");
-addNumber.addEventListener("click", myFunction);
+let addNum = document.querySelectorAll('button');
+let calculation = document.getElementById("results");
+let aaa = 
+addNum.forEach(function(currentButton) {
+currentButton.addEventListener('click', handleEvent);
 
-myFunction(e) 
-let inputField = document.getElementById("results");
-inputField.innerHTML=e.target.value;
+function handleEvent(e) {
+calculation.value=calculation.value+e.target.value;
 console.log(e.target.value);
+}
+})
 
