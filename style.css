@@ -2,65 +2,90 @@ body {
     background-color: greenyellow;
 }
 
-.input {
-width: 23rem;
+.calculator {
+    background-color:rgb(243, 243, 243);
+    width: 480px;
+    height: 600px;
+}
+
+.logo {
+    background-color:rgb(4, 139, 4);
+    color: white;
+    height: 3rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.results {
+    background-color: rgb(255, 255, 255);
+    color: green;
+    box-sizing:border-box;
+    width: 100%;
+    border:0;
+    height: 9rem;
+    outline:0;
+    font-family: sans-serif;
+    font-size:26px;
+    text-align: right;
+    padding: 0px 20px 0px 20px;
 }
 
 .keyboard {
+    width:100%;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin-left:3px;
+ margin-bottom: 5px;
+}
+
+.rightpanel {
     display: flex;
-    flex-direction: row;
-    width: 24rem;
+ flex-direction: column;
+ flex-wrap: wrap;
+ width: 40%;
+ margin-left: 3px;
 }
 
-.numbers {
-    width: 14rem;
-    margin: 2px;
-}
-
-.number {
-    width: 4rem;
-    height: 4rem;
-    background-color: white;
-    color: red;
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    border: 0;
-    margin: 2px;
+.numbers  {
+    width: 58%;
 }
 
 .operators {
-    width: 10rem;
-    margin: 2px;
+    width: 100%;
 }
 
-.operator {
-    width: 4rem;
-    height: 4rem;
-    background-color: white;
-    color: red;
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    border: 0;
-    margin: 2px;
+.number, .operator,  .clear, .finalresult {
+    background-color:rgb(3, 185, 27);
+    width: 90px;
+    height: 90px;
+    border: 1px solid white;
+    font-family:sans-serif;
+    font-size:18px;
+    color:white;
+    padding:0;
 }
 
-#calculator {
-    display: flex;
-    flex-direction: column;
-    width: 24rem;
-    background-color: red;
+.clear {
+    background-color: rgb(4, 113, 133);
+    height:180px;
 }
 
-#results {
-    width: 22rem;
-    height: 4rem;
-    font-size: 22px;
-    color: red;
-    outline:0px;
-    margin: 2px;
-    padding: 10px 10px;
-    text-align: right;
+
+.finalresult {
+    background-color: rgb(248, 3, 3);
+    height:180px;
 }
 
+.number:hover, .operator:hover {
+    background-color: springgreen;
+}
+
+.clear:hover {
+    background-color: rgb(18, 88, 100);
+}
+
+.finalresult:hover {
+    background-color: rgb(168, 4, 4);
+
+}
