@@ -1,4 +1,3 @@
-import {Mathjs} from './node_modules/mathjs';
 const numbers = document.getElementById("numbers");
 numbers.addEventListener('click', function(e) {
         let input = document.getElementById("results");
@@ -20,9 +19,8 @@ console.log("");
 });
  
 const result = document.getElementById("finalresult");
-result.addEventListener("click", function(e) {
-    let input = document.getElementById("results");
-    let parser = parseFloat(input.value);
-    let finalResult = Mathjs.evaluate(parser);
-    input.value=finalResult;
+result.addEventListener('click', function(e) {
+    let input = document.getElementById("results").value;
+    let finalResult = eval(input);
+    console.log(finalResult);
 });
