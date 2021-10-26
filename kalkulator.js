@@ -22,5 +22,6 @@ const result = document.getElementById("finalresult");
 result.addEventListener('click', function(e) {
     let input = document.getElementById("results").value;
     let finalResult = eval(input);
+    document.getElementById("results").value=finalResult;
     console.log(finalResult);
 });
